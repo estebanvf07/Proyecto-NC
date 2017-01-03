@@ -1,0 +1,570 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+
+
+    <section class="wrapper">
+        <div class="row mt">
+            <div class="col-sm-12">
+                <div class="container-fluid">
+                    <h4><i class="fa fa-angle-right"></i> Registrar Productos</h4>
+
+                    <!--Botonones del Crud-->
+                    <div class="form-group">
+                        <button type="button" class="btn btn-default" href="#login">
+                            Consultar
+                            <i class="glyphicon glyphicon-pencil"></i>
+                        </button>
+                        <button type="button" class="btn btn-default" href="#login" onclick="Registrar()">
+                            Registrar
+                            <i class="glyphicons glyphicon-plus"></i>
+                        </button>
+                        <button type="button" class="btn btn-default" href="#login" onclick="Modificar()">
+                            Modificar
+                            <i class="glyphicon glyphicon-pencil"></i>
+                        </button>
+
+                        <div class="col-sm-2">
+                            <select required="required" class="form-control">
+                                <option value="">Buscar por</option>
+                                <option value="">Categoria</option>
+                                <option value="">Nombre</option>
+                                <option value="">Referencia </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+                    function Registrar() {
+                        $("#Registrar").modal("show");
+                    }</script>
+        <script>
+                    function Modificar() {
+                        $("#Modificar").modal("show");
+                    }</script>
+        <script>
+                    function vermas() {
+                        $("#vermas").modal("show");
+                    }</script>
+        <script>
+                    function vermasI() {
+                        $("#vermasI").modal("show");
+                    }</script>
+        <script>
+                    function Consultar() {
+                        $("#Consultar").modal("show");
+                    }</script>
+        <script>
+                    function Agregar() {
+                        $("#Agregar").modal("show");
+                    }</script>
+        <script>
+                    $("[name='my-checkbox']").bootstrapSwitch();
+        </script>
+
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-hover ">
+                    <thead>
+                        <tr>
+                            <th class="info">
+                                Referencia
+                            </th>
+                            <th class="info">
+                                Nombre
+                            </th>
+                            <th class="info">
+                                Cantidad
+                            </th>
+                            <th class="info">
+                                <i class="Icono  fa fa-plus page-scroll" href="Agregar" onclick="Agregar()">
+                                </i>Categoria
+                            </th>
+                            <th class="info">
+                                Estado
+                            </th>
+                            <th class="info">
+                                Ver más
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                Botella Media ron
+                            </td>
+                            <td>
+                                20
+                            </td>
+                            <td>
+                                Licores
+                            </td>
+                            <td>
+                                <input type="checkbox" name="my-checkbox" checked>
+                            </td>
+                            <td>
+                                <i class="Vermas fa fa-eye age-scroll" href="#login" onclick="vermas()"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                2
+                            </td>
+                            <td>
+                                Botella Media ron 5 años
+                            </td>
+                            <td>
+                                50
+                            </td>
+                            <td>
+                                Licores
+                            </td>
+                            <td>
+                                <input type="checkbox" name="my-checkbox" checked>
+                            </td>
+                            <td>
+                                <i class="Vermas fa fa-eye"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                3
+                            </td>
+                            <td>
+                                Botella Media Aguardiente tapa azul
+                            </td>
+                            <td>
+                                24
+                            </td>
+                            <td>
+                                licores
+                            </td>
+                            <td>
+                                <input type="checkbox" name="my-checkbox" checked>
+                            </td>
+                            <td>
+                                <i class="Vermas fa fa-eye"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                4
+                            </td>
+                            <td>
+                                Malta 250 ml botella
+                            </td>
+                            <td>
+                                80
+                            </td>
+                            <td>
+                                Bebidas
+                            </td>
+                            <td>
+                                <input type="checkbox" name="my-checkbox" checked>
+                            </td>
+                            <td>
+                                <i class="Vermas fa fa-eye"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                5
+                            </td>
+                            <td>
+                                Botella José cuervo
+                            </td>
+                            <td>
+                                8
+                            </td>
+                            <td>
+                                No aplica
+                            </td>
+                            <td>
+                                <input type="checkbox" name="my-checkbox" checked>
+                            </td>
+                            <td>
+                                <i class="Vermas fa fa-eye age-scroll" href="#vermas" onclick="vermas()"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                6
+                            </td>
+                            <td>
+                                Botella Curazao
+                            </td>
+                            <td>
+                                10
+                            </td>
+                            <td>
+                                No aplica
+                            </td>
+                            <td>
+                                <input type="checkbox" name="my-checkbox" checked>
+                            </td>
+                            <td>
+                                <i class="Vermas fa fa-eye"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                7
+                            </td>
+                            <td>
+                                Botella Maracuyá
+                            </td>
+                            <td>
+                                10
+                            </td>
+                            <td>
+                                No aplica
+                            </td>
+                            <td>
+                                <input type="checkbox" name="my-checkbox" checked>
+                            </td>
+                            <td>
+                                <i class="Vermas fa fa-eye"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                8
+                            </td>
+                            <td>
+                                Botella Granadina
+                            </td>
+                            <td>
+                                Insumo
+                            </td>
+                            <td>
+                                No aplica
+                            </td>
+                            <td>
+                                <input type="checkbox" name="my-checkbox" checked>
+                            </td>
+                            <td>
+                                <i class="Vermas fa fa-eye"></i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- modal Registrar Categoria-->
+        <div id="Agregar" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Nueva categoria</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-12"><i class="Icono fa fa-search"></i></div>
+                                    <form class="form-horizontal" role="form">
+                                        <div class="form-group">
+                                            <label for="inputEmail" class="col-sm-2 control-label">
+                                                *Nombre
+                                            </label>
+                                            <div class="col-sm-8">
+                                                <i></i>
+                                                <input type="email" class="form-control" id="inputNombre" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="input" type="checkbox" name="cedula" value="Cedula" class="col-sm-2 control-label">
+                                                *Descripción
+                                            </label>
+                                            <div class="col-sm-8">
+                                                <input type="email" class="form-control" id="inputEmail" />
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success"> <a id="Guardar" href="Productos.html">Guardar</a></button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+        <!-- /.modal -->
+        <!--Modal registrar producto-->
+
+        <div id="Registrar" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Nuevo producto</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <form class="form-horizontal" role="form">
+                                            <div class="form-group">
+                                                <div class="form-group" action="Datos.cs">
+                                                    <label for="txtReferenciaProducto" class="col-sm-6 control-label">
+                                                        *Referencia
+                                                    </label>
+                                                    <div class="col-sm-6">
+                                                        <input required="required" type="text" class="form-control" id="txtReferenciaProducto" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="txtNombreProducto" class="col-sm-6 control-label">
+                                                        *Nombre
+                                                    </label>
+                                                    <div class="col-sm-6">
+                                                        <input required="required" type="text" class="form-control" id="txtNombreProducto" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="input" class="col-sm-6 control-label">
+                                                        *Categoria :
+                                                    </label>
+                                                    <div class="col-sm-6">
+                                                        <select required="required" class="form-control">
+                                                            <option value="">"Seleccione categoria"</option>
+                                                            <option value="">Licores</option>
+                                                            <option value="">Gaseosas </option>
+                                                            <option value="">Cigarrillos </option>
+                                                            <option value="">Energizantes </option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="input" class="col-sm-6 control-label">
+                                                        *Ingrese cantidad :
+                                                    </label>
+                                                    <div class="col-sm-6">
+                                                        <input required="required" type="number" class="form-control" id="inputText" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputEmail" class="col-sm-6 control-label">
+                                                        *Costo de entrada :
+                                                    </label>
+                                                    <div class="col-sm-6">
+                                                        <input required="required" type="number" class="form-control" id="inputText" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputEmail" class="col-sm-6 control-label">
+                                                        *Costo de salida :
+                                                    </label>
+                                                    <div class="col-sm-6">
+                                                        <input required="required" type="number" class="form-control" id="inputText" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="inputEmail" class="col-sm-6 control-label">
+                                                        *Imagen :
+                                                    </label>
+                                                    <div class="col-sm-6">
+                                                        <input required="required" type="text" class="form-control" id="inputText" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                            <button type="submit" class="btn btn-success"> <a id="Guardar" href="Productos.html">Guardar</a></button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+        </div>
+
+        <!--Modal modificar producto-->
+
+        <div id="Modificar" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Modificar Producto</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <form class="form-horizontal" role="form">
+                                            <div class="form-group">
+                                                <div class="form-group">
+                                                    <label for="inputEmail" class="col-sm-2 control-label">
+                                                        Referencia
+                                                    </label>
+                                                    <div class="col-sm-8">
+                                                        <input type="number" class="form-control" id="txtModificarReferencia" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="inputEmail" class="col-sm-2 control-label">
+                                                        Nombre
+                                                    </label>
+                                                    <div class="col-sm-8">
+                                                        <input type="text" class="form-control" id="txtModificarNombreProducto" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="input" class="col-sm-2 control-label">
+                                                        Categoria
+                                                    </label>
+                                                    <div class="col-sm-8">
+                                                        <select required="required" class="form-control">
+                                                            <option value="">"Seleccione categoria"</option>
+                                                            <option value="">Licores</option>
+                                                            <option value="">Gaseosas </option>
+                                                            <option value="">Cigarrillos </option>
+                                                            <option value="">Energizantes </option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="txtModificarCantidadProducto" class="col-sm-2 control-label">
+                                                        Ingrese Cantidad
+                                                    </label>
+                                                    <div class="col-sm-8">
+                                                        <input type="number" class="form-control" id="txtModificarCantidadProducto" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="txtModificarCostoEntradaProducto" class="col-sm-2 control-label">
+                                                        Costo de entrada
+                                                    </label>
+                                                    <div class="col-sm-8">
+                                                        <input type="number" class="form-control" id="txtModificarCostoEntradaProducto" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="txtModificarCostoSalidaProducto" class="col-sm-2 control-label">
+                                                        Costo de salida
+                                                    </label>
+                                                    <div class="col-sm-8">
+                                                        <input type="number" class="form-control" id="txtModificarCostoSalidaProducto" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="txtModificarImagenProducto" class="col-sm-2 control-label">
+                                                        Imagen
+                                                    </label>
+                                                    <div class="col-sm-8">
+                                                        <input type="text" class="form-control" id="txtModificarImagenProducto" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-success"> <a id="Modificar" href="Productos.html">Modificar</a></button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <!--Modal de ver mas -->
+        <div id="vermas" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Detalles del producto</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <form class="form-horizontal" role="form">
+                                            <div class="form-group">
+                                                <div class="form-group">
+                                                    <label for="<input type=" checkbox" name="cedula" value="Cedula" " class="col-sm-2 control-label">
+                                                        Referencia
+                                                    </label>
+                                                    <div class="col-sm-8">
+                                                        <input type="email" class="form-control" id="inputEmail" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputEmail" class="col-sm-2 control-label">
+                                                    Nombre
+                                                </label>
+                                                <div class="col-sm-8">
+                                                    <input type="email" class="form-control" id="inputEmail" />
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputEmail" class="col-sm-2 control-label">
+                                                    Categoria
+                                                </label>
+                                                <div class="col-sm-8">
+                                                    <input type="email" class="form-control" id="inputEmail" />
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputEmail" class="col-sm-2 control-label">
+                                                    Estado
+                                                </label>
+                                                <div class="col-sm-8">
+                                                    <input type="email" class="form-control" id="inputNombre" />
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputEmail" class="col-sm-2 control-label">
+                                                    Costo de entrada
+                                                </label>
+                                                <div class="col-sm-8">
+                                                    <input type="email" class="form-control" id="inputNombre" />
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputEmail" class="col-sm-2 control-label">
+                                                    Costo de salida
+                                                </label>
+                                                <div class="col-sm-8">
+                                                    <input type="email" class="form-control" id="inputNombre" />
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-success"> <a id="Modificar" href="Productos.html">Modificar</a></button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+    </section><! --/wrapper -->
+<!--main content end-->
+<!--footer start-->
