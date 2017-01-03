@@ -292,7 +292,6 @@
     <Content Include="Content\assets\lineicons\fonts\linecons.woff" />
     <Content Include="Content\assets\lineicons\fonts\_DS_Store" />
     <Content Include="Content\assets\lineicons\_DS_Store" />
-    <Content Include="PRUEBA\PRUEBA.html" />
     <Content Include="RegistrarProductos.aspx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap-fullcalendar.css" />
@@ -509,6 +508,7 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="esteban\esteban.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
